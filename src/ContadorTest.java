@@ -9,4 +9,11 @@ public class ContadorTest {
         
     }
 
+
+    @Test
+    public void testvalorInicial(){
+        Contador c = new Contador(10);
+        assertEquals(0,c.get_valorInicial());
+    }
+
 }

@@ -11,7 +11,18 @@ public class Contador{
         this.valorIncremento = valorIncremento;
     }
 
-    
+    public Contador(int valorFinal){
+        this.valorIncremento = 1;
+        this.valorInicial = 0;
+        this.valorFinal = valorFinal;
+    }
+
+    public int NumeroObligado(int valorFinal2) {
+        this.valorFinal = valorFinal2;
+        return valorFinal;
+    }
+
+
 
 
 
