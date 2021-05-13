@@ -5,6 +5,14 @@ public class Contador{
     int valorIncremento = 0;
 
 
+    public Contador(int valorInicial, int valorFinal, int valorIncremento) {
+        this.valorInicial = valorInicial;
+        this.valorFinal = valorFinal;
+        this.valorIncremento = valorIncremento;
+    }
+
+    
+
 
 
 
