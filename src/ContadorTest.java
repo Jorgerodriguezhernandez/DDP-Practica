@@ -16,8 +16,10 @@ public class ContadorTest {
         assertEquals(0,c.get_valorInicial());
     }
 
+    @Test
     public void testvalorIncremento(){
-        Contador c = new Contador(1);
-        assertEquals(1,c.getValorIncremento());
+        Contador c = new Contador(0,1,3);
+        assertTrue(c.incremento());
     }
+
 }
