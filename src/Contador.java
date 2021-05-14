@@ -3,7 +3,7 @@ public class Contador{
     int valorInicial;
     int valorFinal;
     int valorIncremento;
-    
+    int valorActual = valorInicial;
 
 
     public Contador(int valorInicial, int valorFinal, int valorIncremento) {
@@ -38,7 +38,7 @@ public class Contador{
     }
 
     public boolean incremento() {
-        int valorActual = valorInicial;
+        
         valorActual = valorIncremento + valorInicial;
 
         if (valorActual > valorFinal){
@@ -48,7 +48,6 @@ public class Contador{
         }
 
     }
-
 
 
 

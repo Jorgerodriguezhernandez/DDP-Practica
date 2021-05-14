@@ -6,7 +6,7 @@ public class ContadorTest {
     public void testCreacionObjet() {
 
         Contador calculo = new Contador(1,6,1);
-        
+
     }
 
 
@@ -22,4 +22,11 @@ public class ContadorTest {
         assertTrue(c.incremento());
     }
 
+    @Test
+    public void testReseteoAInicial(){
+        Contador c = new Contador(0,1,3);
+        assertEquals(0,c.reseteo());
+    }
 }
+
+
