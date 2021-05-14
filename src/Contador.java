@@ -49,7 +49,13 @@ public class Contador{
 
     }
 
-
+    public int reseteo(){
+        
+        if(incremento() ==  true){
+            valorActual = valorInicial;
+        }        
+        return valorActual;
+    }
 
 
 }
