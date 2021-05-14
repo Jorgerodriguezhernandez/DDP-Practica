@@ -25,7 +25,7 @@ public class ContadorTest {
     @Test
     public void testReseteoAInicial(){
         Contador c = new Contador(0,1,3);
-        assertEquals(0,c.reseteo());
+        assertEquals(0,c.get_valorInicial());
     }
 }
 

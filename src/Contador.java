@@ -1,10 +1,9 @@
-public class Contador{
+public class Contador {
 
     int valorInicial;
     int valorFinal;
     int valorIncremento;
     int valorActual = valorInicial;
-
 
     public Contador(int valorInicial, int valorFinal, int valorIncremento) {
         this.valorInicial = valorInicial;
@@ -13,7 +12,7 @@ public class Contador{
 
     }
 
-    public Contador(int valorFinal){
+    public Contador(int valorFinal) {
         this.valorIncremento = 1;
         this.valorInicial = 0;
         this.valorFinal = valorFinal;
@@ -22,7 +21,6 @@ public class Contador{
     public int get_valorInicial() {
         return valorInicial;
     }
-
 
     public int getValorFinal() {
         return valorFinal;
@@ -38,10 +36,11 @@ public class Contador{
     }
 
     public boolean incremento() {
-        
+
         valorActual = valorIncremento + valorInicial;
 
-        if (valorActual > valorFinal){
+        if (valorActual > valorFinal) {
+            reseteo();
             return true;
         } else {
             return false;
@@ -49,13 +48,10 @@ public class Contador{
 
     }
 
-    public int reseteo(){
-        
-        if(incremento() ==  true){
-            valorActual = valorInicial;
-        }        
-        return valorActual;
-    }
+    public void reseteo() {
 
+        valorActual = valorInicial;
+
+    }
 
 }
