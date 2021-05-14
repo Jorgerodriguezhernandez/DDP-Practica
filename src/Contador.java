@@ -26,9 +26,7 @@ public class Contador{
         return valorFinal;
     }
 
-    public int getValorIncremento() {
-        return valorIncremento;
-    }
+
 
     public int NumeroObligado(int valorFinal2) {
         this.valorFinal = valorFinal2;
